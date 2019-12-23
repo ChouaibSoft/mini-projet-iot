@@ -1,0 +1,76 @@
+.form {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  border-radius: 4px;
+  position: relative;
+  padding: 0;
+  margin: 2px 0;
+  width: 100%;
+  .row{
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .button {
+    float: right;
+    background-color: $navbarBackground;
+  }
+  .forget-password{
+    margin: 40px 0 10px 43px;
+    color: rgba($navbarBackground, .8);
+    font-size: .9rem;
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  .delete-field {
+    position: absolute;
+    top: 32%;
+    right: 6%;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  input.valid:not(.browser-default),
+  input.valid:not(.browser-default):focus{
+    border-bottom: 1px solid #2bbbad;
+    box-shadow: 0 1px 0 0 #2bbbad;
+  }
+  input.valid:not(.browser-default):focus.valid ~ label{
+    color:#2bbbad;
+  }
+  .vue-tel-input{
+    border: none;
+    box-shadow: none !important;
+    &:hover{
+      border: none;
+      box-shadow: none;
+    }
+  }
+  textarea{
+    resize: none;
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid #9e9e9e;
+    outline: 0;
+    &:focus + label{
+      color: #2bbbad;
+    }
+  }
+  textarea.valid{
+    border-bottom: 1px solid #2bbbad;
+    box-shadow: 0 1px 0 0 #2bbbad;
+  }
+  textarea.invalid{
+    border: none;
+    border-bottom: 1px solid #F44336;
+    box-shadow: 0 1px 0 0 #F44336;
+  }
+  &.add-command{
+    margin-top: 30px;
+  }
+  .form-controls{
+    margin-top: 10px;
+    margin-bottom: -5px;
+  }
+}

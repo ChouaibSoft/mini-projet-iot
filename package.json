@@ -1,0 +1,69 @@
+{
+  "name": "iot-agriculture",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "chart.js": "^2.8.0",
+    "css-loader": "^2.1.1",
+    "jquery": "^3.4.1",
+    "jwt-decode": "^2.2.0",
+    "plotly.js": "^1.47.4",
+    "pusher-js": "^4.4.0",
+    "style-loader": "^0.23.1",
+    "vue": "^2.6.6",
+    "vue-axios": "^2.1.4",
+    "vue-breadcrumbs": "^1.2.0",
+    "vue-flag-icon": "^1.0.6",
+    "vue-flash-message": "^0.7.2",
+    "vue-i18n": "^8.0.0",
+    "vue-persistent-state": "^0.2.1",
+    "vue-router": "^3.0.2",
+    "vue-tel-input": "^2.1.3",
+    "vuelidate": "^0.7.4",
+    "vuex": "^3.1.0",
+    "vuex-persist": "^2.0.0",
+    "vuex-persistedstate": "latest"
+  },
+  "devDependencies": {
+    "@kazupon/vue-i18n-loader": "^0.3.0",
+    "@vue/cli-plugin-babel": "^3.5.0",
+    "@vue/cli-plugin-eslint": "^3.5.0",
+    "@vue/cli-service": "^3.5.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-cli-plugin-i18n": "^0.6.0",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

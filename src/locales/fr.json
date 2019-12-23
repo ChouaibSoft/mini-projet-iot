@@ -1,0 +1,60 @@
+{
+  "help": "Aide",
+  "auth": {
+    "welcome": "Bienvenue !",
+    "sign-in": "Connexion",
+    "sign-up": "s'inscrire",
+    "username": "Nom d'utilisateur",
+    "email": "Email",
+    "password": "mot de passe",
+    "conf-password": "Confirmation",
+    "success": "Félicitation !",
+    "error": "échec d'inscription !",
+    "forgot-password": "Mot de passe oublié?",
+    "submit": "Submit",
+    "cancel": "Annuler",
+    "account-not-activated": "Votre compte n'est pas activé, veuillez vérifier votre boîte de réception pour confirmer votre email.",
+    "login-failed": "email ou mot de passe incorrect"
+  },
+  "errors": {
+    "required": "ce champ est obligatoire.",
+    "same-as": "les mots de passe doivent correspondre!",
+    "min-length-password": "le mot de passe doit être supérieur ou égal à {minLength} caractères",
+    "min-length": "le champ doit être supérieur ou égal à {minLength} caractères"
+  },
+  "canal": {
+    "name": "Nom du Field",
+    "description": "Description",
+    "fieldX": "Champ {num}",
+    "add": "Ajouter",
+    "update": "Modifier",
+    "add-success": "Field ajouté avec succès.",
+    "update-success": "Field modifié avec succès.",
+    "add-error": "L'opération d'ajout de Field a échoué !",
+    "update-error": "L'opération de modification de Field a échoué !",
+    "delete-success": "Channel successfully deleted",
+    "delete-error": "Channel delete operation failed",
+    "delete-msg": "Êtes-vous sûr de supprimer ce Field"
+
+  },
+  "tooltips": {
+    "add-channel": "nouveau Field",
+    "notification": "notifications",
+    "search": "rechercher ici",
+    "collapse-menu": "Réduire le menu",
+    "new-trigger": "nouveau trigger",
+    "new-react": "nouveau react",
+    "import": "Importer un fichier",
+    "export": "Exporter"
+  },
+  "page-title": {
+    "auth": "Authentication",
+    "dashboard": "Dashboard",
+    "new-channel": "Nouveau  Field",
+    "my-channels": "Mes Canaux",
+    "detail-channel": "Detail Cananl",
+    "view": "Canla Visualisation",
+    "api-key": "Field API Keys",
+    "settings": "paramètres de Field"
+    }
+}

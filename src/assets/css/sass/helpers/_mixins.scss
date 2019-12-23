@@ -1,0 +1,67 @@
+  /*
+  ** Media Query Mixin For Help Only
+  */
+
+@mixin minMedium{
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+  /*
+  ** Overlay Mixin
+  */
+
+@mixin overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+  /*
+  ** Prefixes Mixin
+  ** Auto Add Prefixes To Properties
+  */
+
+@mixin prefixer($property, $value, $prefixes:()){
+  @each  $prefix in $prefixes{
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+  #{$property}: $value;
+}
+
+
+  /*
+  ** Button Animation Hover
+  ** Add Hover Animation to Buttons
+  */
+
+  @mixin button-hover{
+    background-size: 150% auto;
+    background-image: linear-gradient(to right, #11d7e4 0%, rgba(#48eaa1 , .8)50%,#48eaa1 90%);
+    transition: 0.5s;
+    &:hover {
+      background-position: right center;
+    }
+  }
+
+
+
+  /*
+  ** Animation Mixin
+  ** Auto Add Prefixes To Animation
+  */
+
+@mixin keyFrame($animation-name){
+  @-webkit-keyframes #{$animation-name}{
+    @content
+  }
+    @-moz-keyframes #{$animation-name}{
+    @content
+  }
+    @keyframes #{$animation-name}{
+    @content
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "help": "Help",
+  "auth": {
+    "welcome": "Welcome !",
+    "sign-in": "Sign In",
+    "sign-up": "Sign Up",
+    "username": "Username",
+    "password": "Password",
+    "email": "Email",
+    "conf-password": "Password Confirmation",
+    "success": "Congratulation!",
+    "error": "Registration Failed !",
+    "forgot-password": "Forgot Password?",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "account-not-activated": "Your account is not activated, please check your inbox to confirm your email.",
+    "login-failed": "email or password wrong"
+  },
+  "errors": {
+    "required": "this is field is required.",
+    "same-as": "passwords must match!",
+    "min-length-passwotrd": "password must be greater or equal {minLength} characters",
+    "min-length": "this field must be greater or equal {minLength} characters"
+  },
+  "canal": {
+    "name": "Name of the filed",
+    "description": "Description",
+    "fieldX": "Field {num}",
+    "add": "Add",
+    "update": "Update",
+    "add-success": "Field added successfully.",
+    "update-success": "Field updated successfully .",
+    "add-error": "add Field operation failed !",
+    "update-error": "Update Field operation failed!",
+    "delete-success": "Field successfully deleted",
+    "delete-error": "Field delete operation failed",
+    "delete-msg": "Are you sure to delete this Field"
+  },
+  "tooltips": {
+    "add-channel": "new field",
+    "notification": "notifications",
+    "search": "search here",
+    "collapse-menu": "Collapse Menu",
+    "new-trigger": "new trigger",
+    "new-react": "new react",
+    "import": "Import File",
+    "export": "Export as CSV"
+  },
+  "page-title": {
+    "auth": "Authentication",
+    "dashboard": "Dashboard",
+    "new-channel": "New Fields",
+    "my-channels": "My Field",
+    "detail-channel": "Detail Channel",
+    "view": "Channel Visualisation",
+    "api-key": "Channel API Keys",
+    "settings": "Channel Settings"
+    }
+}

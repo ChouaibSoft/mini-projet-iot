@@ -1,0 +1,170 @@
+*{
+  @include prefixer(box-sizing, border-box);
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+body{
+  background-color: $theme;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: 'Raleway', 'Helvetica Neue', 'Helvetica', Arial, Verdana, sans-serif;
+  .alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+  .alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+  }
+  p{
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+  a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+        text-underline: none;
+        color: $textColor;
+      }
+  }
+  li{
+    list-style: none;
+  }
+  .account-not-activated{
+    position: fixed;
+    width: 100%;
+    top: 63px;
+    left: 0;
+    padding: 10px 0;
+    background-color: #f2dede;
+    color: #a94442;
+    text-align: center;
+    z-index: 999;
+  }
+  table{
+    thead{
+      background-color: #f9f9f9;
+    }
+    tr{
+      border: 1px double #ccc;
+    }
+    td{
+      border: 1px double #ccc;
+      padding-left: 10px;
+
+    }
+    th{
+      border: 1px double #ccc;
+      padding-left: 10px;
+    }
+    tbody{
+      tr{
+        cursor: pointer;
+      }
+      .not-allowed{
+        cursor: auto;
+      }
+    }
+  }
+  .content{
+    margin: 45px  35px 75px -50px;
+    @media #{$maxSmall} {
+      margin: 75px 0;
+    }
+    text-align: left;
+    strong{
+      font-weight: bold;
+    }
+    .page-title-path{
+      h2{
+        font-weight: bold;
+        font-size: 1.7rem;
+        color: $mainTitle;
+        margin-top: -5px !important;
+      }
+      p{
+        text-align: right;
+        color: $greyColor;
+        span{
+          color: #3E71F2;
+        }
+      }
+    }
+    .component-section{
+      margin-top: 0;
+      h4{
+        color: $mainTitle;
+        margin-bottom: 25px;
+      }
+      h5{
+        color: $mainTitle;
+      }
+      .pagination{
+        margin-top: 15px;
+        a{
+          outline: 0;
+        }
+        .active{
+          background-color: #26a69a;
+          border-radius: 50%;
+        }
+      }
+      .action{
+        text-align: left;
+        width: 19% !important;
+        i{
+          font-size: 21px;
+          margin-left: 5px;
+          &:hover{
+            color: none;
+          }
+        }
+        a:nth-child(1){
+          color: #039be5;
+        }
+        a:nth-child(3){
+          i{
+            color: $navbarBackground;
+          }
+        }
+        a:nth-child(2){
+          i{
+            color: #2bbbad;
+          }
+        }
+      }
+      .help{
+        margin-top: -25px;
+        padding-left: 20px;
+        h5{
+          color: $greyColor;
+        }
+        @media #{$maxSmall} {
+          margin-top: 0;
+          padding-left: 0px;
+        }
+        .help-list{
+          margin-left: 18px;
+          li{
+            list-style-type: disc !important;
+            ul{
+              li{
+                margin-left: 30px;
+                list-style-type: circle !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
