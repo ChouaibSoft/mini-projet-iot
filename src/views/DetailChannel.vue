@@ -21,13 +21,13 @@
                 <div class="col s12 l12">
                     <div class="channel-head ch-head-2" style="border-left: 1px solid #9e9e9e; padding: 0 20px 5px 30px">
                         <p><strong>{{ $t('write-key') }}</strong>
-                            <span class="red-text">{{ this.getApiUrl  }}/aquisition-service/record?</span>
+                            <span class="red-text"> {{ this.getApiUrl  }}/aquisition-service/record?</span>
                             <span class="teal-text lighten-2">
                             key={{ getCanal.cleEcriture }}&feild={{ getCanal.nom }}
                             </span>
                         </p>
                         <p><strong>{{ $t('read-key') }}</strong>
-                            <span class="red-text">{{ this.getApiUrl  }}/aquisition-service/read?</span>
+                            <span class="red-text"> {{ this.getApiUrl  }}/aquisition-service/read?</span>
                             <span class="teal-text lighten-2">
                             key={{ getCanal.cleLecture }}&feild={{ getCanal.nom }}
                             </span>
