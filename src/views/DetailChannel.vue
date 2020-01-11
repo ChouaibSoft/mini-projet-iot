@@ -11,17 +11,27 @@
         </div>
         <section class="component-section">
             <div class="row">
-                <div class="col s12 l5">
+                <div class="col s12 l12">
                     <div class="channel-head">
                         <p><strong>{{ $t('channel-name') }}</strong>{{ getCanal.nom }}</p>
-                        <p><strong>{{ $t('channel-id') }}</strong>#{{ getCanal.id }}</p>
+                        <p class="description"><strong>{{ $t('description')}}</strong>{{ getCanal.description }}</p>
                         <p><strong>{{ $t('channel-owner')}}</strong>@chouaib</p>
                     </div>
                 </div>
-                <div class="col s12 l7">
+                <div class="col s12 l12">
                     <div class="channel-head ch-head-2" style="border-left: 1px solid #9e9e9e; padding: 0 20px 5px 30px">
-                        <p class="description"><strong>{{ $t('description')}}</strong>{{ getCanal.description }}</p>
-                        <div>
+                        <p><strong>{{ $t('write-key') }}</strong>
+                            <span class="red-text">{{ this.getApiUrl  }}/aquisition-service/record?</span>
+                            <span class="teal-text lighten-2">
+                            key={{ getCanal.cleEcriture }}&feild={{ getCanal.nom }}
+                            </span>
+                        </p>
+                        <p><strong>{{ $t('read-key') }}</strong>
+                            <span class="red-text">{{ this.getApiUrl  }}/aquisition-service/read?</span>
+                            <span class="teal-text lighten-2">
+                            key={{ getCanal.cleLecture }}&feild={{ getCanal.nom }}
+                            </span>
+                        </p>                        <div>
                             <a class="waves-effect waves-light btn delete-channel">
                                 <i class="fa fa-trash fa-small"></i>
                                 {{ $t('delete-channel') }}
@@ -63,7 +73,7 @@
             }
         },
         computed: {
-            ...mapGetters(['getCanal', 'getUserId'])
+            ...mapGetters(['getCanal', 'getUserId', 'getApiUrl'])
         },
         methods: {
             ...mapActions(['deleteRequest'])
@@ -91,6 +101,8 @@
     "channel-owner": "Owner :",
     "description": "Description :",
     "delete-channel": "Channel",
+    "read-key": "Read Key :",
+    "write-key": "Write Key :",
     "component-toggle": {
     "view": "Visualisation",
     "api-keys": "API keys",
@@ -102,6 +114,8 @@
     "main-title": "Detail du Field",
     "channel-name": "Nom du Field :",
     "channel-id": "ID du Field :",
+    "read-key": "Clé de lecture :",
+    "write-key": "Clé d'écriture :",
     "channel-owner": "Propriétaire :",
     "description": "Description :",
     "delete-channel": "Field",
