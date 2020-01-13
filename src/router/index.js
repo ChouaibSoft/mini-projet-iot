@@ -69,6 +69,16 @@ const router = new Router({
                             component: () => import("@/components/Visualisation")
                         }
                     ]
+                },
+                {
+                    path: "actions/new",
+                    name: "new-trigger",
+                    meta: {
+                        protected: true,
+                        title: i18n.t('page-title.new-trigger'),
+                        breadcrumb: 'Home Page'
+                    },
+                    component: () => import("@/views/AddTrigger")
                 }
             ]
         }

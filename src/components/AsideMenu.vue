@@ -36,6 +36,22 @@
                     </ul>
                 </div>
             </li>
+            <li class="item-header">
+                <a href="#!" class="group-name has-arrow">
+                    <i class="fa fa-charging-station"></i>
+                    <span class="nav-text">{{ $t('Action') }}</span>
+                </a>
+                <div>
+                    <ul class="items-group">
+                        <li>
+                            <router-link :to="{ name: 'new-trigger'}">
+                                <i class="fa fa-dot-circle"></i>
+                                <span>{{ $t('page-title.new-trigger') }}</span>
+                            </router-link>
+                        </li>
+                    </ul>
+                </div>
+            </li>
             <li class="small-cap">
                 <span>{{ $t('help') }}</span>
             </li>

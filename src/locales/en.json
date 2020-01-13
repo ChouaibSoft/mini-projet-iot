@@ -46,10 +46,28 @@
     "import": "Import File",
     "export": "Export as CSV"
   },
+  "trigger": {
+    "name": "Name of The Action",
+    "commandX": "Command",
+    "add": "Add",
+    "update": "Update",
+    "add-success": "Action added successfully.",
+    "add-error": "Action add operation failed !",
+    "delete-msg": "Are you sure to delete this Action",
+    "delete-success": "Action successfully deleted",
+    "delete-error": "Action delete operation failed"
+  },
+  "commande": {
+    "add-success": "Commande added successfully. ",
+    "add-error": "Commande add operation failed !"
+
+  },
   "page-title": {
     "auth": "Authentication",
     "dashboard": "Dashboard",
     "new-channel": "New Fields",
+    "new-trigger": "New Action",
+    "my-triggers": "My Actions",
     "my-channels": "My Field",
     "detail-channel": "Detail Channel",
     "view": "Channel Visualisation",

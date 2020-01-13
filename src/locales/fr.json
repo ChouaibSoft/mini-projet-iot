@@ -37,6 +37,23 @@
     "delete-msg": "Êtes-vous sûr de supprimer ce Field"
 
   },
+  "commande": {
+    "add-success": "Commande ajouté avec succès. ",
+    "add-error": "L'opération d'ajout de Commande a échoué ! "
+
+  },
+  "trigger": {
+    "name": "Nom de l'Action",
+    "commandX": "Commande",
+    "add": "Ajouter",
+    "update": "Modifier",
+    "add-success": "Action ajouté avec succès.",
+    "add-error": "L'opération d'ajout de l'Action a échoué !",
+    "delete-msg": "Êtes-vous sûr de supprimer cette Action",
+    "delete-success": "Action successfully deleted",
+    "delete-error": "Action delete operation failed"
+
+  },
   "tooltips": {
     "add-channel": "nouveau Field",
     "notification": "notifications",
@@ -52,6 +69,8 @@
     "dashboard": "Dashboard",
     "new-channel": "Nouveau  Field",
     "my-channels": "Mes Canaux",
+    "new-trigger": "Nouveau Action",
+    "my-triggers": "Mes Actions",
     "detail-channel": "Detail Cananl",
     "view": "Canla Visualisation",
     "api-key": "Field API Keys",
